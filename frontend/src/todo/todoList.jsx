@@ -3,8 +3,8 @@ import React from 'react'
 export default props => {
   const renderRows = () => {
     const list = props.list || []
-    return list.map((todo, index) => (
-      <tr key={index}>
+    return list.map(todo => (
+      <tr key={todo._id}>
         <td>{todo.description}</td>
       </tr>
     ))
